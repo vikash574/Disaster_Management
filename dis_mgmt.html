@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Armed Intelligence Military - Soldier Page</title>
+    <link rel="stylesheet" href="dis_mgmt.css">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="logo-img">
+                <div class="logo">
+                    <img src="LOGO3.png" alt="Logo">
+                </div>
+                <h1 class="colorful-text">Advanced Intelligence Management</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="hover-item">Overview</a>
+                        <!-- <div class="dropdown-content">
+                            <a href="#">Overview 1</a>
+                            <a href="#">Overview 2</a>
+                            <a href="#">Overview 3</a>
+                        </div> -->
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="hover-item">Statistics</a>
+                        <!-- <div class="dropdown-content">
+                            <a href="#">Strategy 1</a>
+                            <a href="#">Strategy 2</a>
+                            <a href="#">Strategy 3</a>
+                        </div> -->
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="hover-item">Strategies</a>
+                        <div class="dropdown-content">
+                            <a href="#">Inbox</a>
+                            <a href="#">Sent Items</a>
+                            <a href="#">Compose</a>
+                        </div>
+                    </li>
+                </ul>
+                <button id="logoutButton">Logout</button>
+            </nav>
+            <div id="profile">
+                <!-- Placeholder profile picture -->
+                <img id="profile-picture" src="sold4.jpg" alt="Profile Picture">
+                <!-- Username display -->
+                <span id="username">Username</span>
+              </div>
+        </div>
+    </header>
+
+    <section id="content">
+        <div class="container">
+            <!-- Content for list items -->
+            <div class="list-item" id="overview">
+                <h3>Overview</h3>
+                <p>Welcome to Advanced Intelligence Management, </p>
+                <p>"The Advanced Intelligence Management website serves as a critical platform for effective disaster
+                    management during times of war and national crises. Our dedicated Rescuers work tirelessly to ensure
+                    the safety and well-being of citizens by providing essential services and facilities to affected
+                    areas. With a focus on rapid response and strategic planning, we aim to mitigate the impact of
+                    disasters and safeguard the nation's security."</p>
+            </div>
+            <div class="list-item" id="strategies">
+                <h3>Statistics</h3>
+                <div class="carousel">
+                    <div class="slide">
+                        <img src="st1.jpeg" alt="Strategy 1">
+                        <div class="caption">Rapid Deployment: Our first strategy involves the swift deployment of
+                            trained personnel and resources to areas facing immediate threats. By establishing efficient
+                            communication channels and logistics support, we ensure timely assistance to affected
+                            communities.</div>
+                    </div>
+                    <div class="slide">
+                        <img src="st2.jpeg" alt="Strategy 2">
+                        <div class="caption">Coordination and Collaboration: Effective coordination among different
+                            branches of the military and collaboration with government agencies and humanitarian
+                            organizations are key components of our strategy.</div>
+                    </div>
+                    <div class="slide">
+                        <img src="st3.jpeg" alt="Strategy 3">
+                        <div class="caption">Technology Integration: Leveraging cutting-edge technology, including
+                            satellite imagery, drones, and data analytics, forms another cornerstone of our approach. By
+                            harnessing these tools, we enhance situational awareness, decision-making, and resource
+                            allocation in dynamic environments.</div>
+                    </div>
+                </div>
+            </div>
+            <div class="list-item" id="messages">
+                <h3>Strategy for Rescue force Allocations</h3>
+                <p>
+                <a href="knapsack.html" class="button">Go for Strategy</a></p>
+            </div>
+        </div>
+
+
+        <section id="soldiers">
+            <div class="container">
+                <h2>Major Locations </h2>
+                <!-- Soldier cards -->
+                <div class="cards">
+                    <div class="soldier-card" id="s1">
+                        <h2>Odisha</h2>
+                        <p>Base Camp: Bhubaneswar</p>
+                        <p>Number of Rescuers: 1100 Approx.</p>
+                        <p>About: A coastal area prone to Natural Disasters like Earthquake and storms.</p>
+                    </div>
+                    <div class="soldier-card" id="s2">
+                        <h2>Manipur</h2>
+                        <p>Base Camp: Imphal</p>
+                        <p>Number of Rescuers: 500 Approx.</p>
+                        <p>About: Loacated in the North-Easthern part of the country this area is susceptible to political disturbances and naxel attacks.</p>
+                    </div>
+                    <div class="soldier-card" id="s3">
+                        <h2>Kashmir</h2>
+                        <p>Base Camp: Shri Nagar</p>
+                        <p>Number of Rescuers: 3000 Approx.</p>
+                        <p>About: A sensitive area highly prone to military insurgence and hence an area of extreame importance.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="chat-box" id="chatBox">
+            <div class="chat-header">
+                <h3>Chat</h3>
+                <button id="closeChat" onclick="toggleChat()">Close</button>
+            </div>
+            <div class="chat-content" id="chatMessages">
+                <!-- Chat messages will be displayed here -->
+            </div>
+            <div class="chat-input">
+                <input type="text" id="messageInput" placeholder="Type your message...">
+                <button onclick="sendMessage()">Send</button>
+            </div>
+        </div>
+
+        <button id="openChat" onclick="toggleChat()">Open Chat</button>
+        <footer>
+            <div class="container">
+                <h2>Contact Information</h2>
+                <p>Address: 123 Army Base, City, Country</p>
+                <p>Phone: +1234567890</p>
+                <p>Email: info@armedintelligence.com</p>
+            </div>
+            <span class="copy-mark">&copy; 2024 Armed Intelligence Military</span>
+        </footer>
+
+        <script src="dis_mgmt.js"></script>
+</body>
+
+</html>

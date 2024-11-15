@@ -1,0 +1,469 @@
+/* General styles */
+body {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.4)url('back_img3.jpeg') no-repeat center center fixed;
+  background-size: cover;
+  background-blend-mode: darken;
+  /* https://i.gifer.com/7fWl.gif */
+}
+
+.container {
+  width: 88%;
+ height: auto;
+  margin: 0 auto;
+  color: #adb5bd;
+  font-family: 'Oswald', sans-serif;
+  font-weight: bold;
+  
+}
+.container h3{
+  color: white;
+  text-align: center;
+  text-shadow: white; 
+  font-size: 30px;
+}
+
+.logo-img{
+  display: flex;
+  align-items: center;
+  text-align: center;
+  padding: 10px 20px; /* Adjust padding as needed */
+  color: #fff; /* Set text color for the header */
+  margin-left: 15%;
+}
+.logo img {
+  width: 70px; /* Adjust logo width as needed */
+  height: 50px; /* Maintain aspect ratio */
+  margin-right: 10px; /* Adjust margin as needed */
+  border-radius: 50%; /* Makes it circular */
+  overflow: hidden;
+  position: absolute; /* Position the logo absolutely */
+  top: 40px; /* Adjust as needed */
+  left: 40px; /* Adjust as needed */
+  margin-top: 7px;
+}
+#profile {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+#profile-picture {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%; /* Display profile picture in a circle */
+  margin-bottom: 5px; /* Add some space between profile picture and username */
+}
+
+#username {
+  font-weight: bold;
+}
+
+#overview p{
+  font-size: 20px;
+}
+#soldiers{
+  font-size: 24px;
+}
+#logoutButton {
+  position: absolute;
+  top: 110px; /* Adjust as needed */
+  right: 10px; /* Adjust as needed */
+  color:white;
+  background-color: rgba(5, 5, 29, 0.836);
+  border-radius: 2px;
+}
+.cards{
+ color: black;
+    display: flex;
+}
+
+header {
+  background-color: #151d3b5c;
+  padding: 20px 0;
+}
+
+header h1 {
+  color: white;
+  text-align: center;
+  font-family: 'Oswald', sans-serif;
+font-weight: 700;
+font-size: 36px;
+text-transform: uppercase;
+letter-spacing: 2px;
+text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.829);
+}
+.colorful-text {
+  /* background: linear-gradient(to right, #2df7e6b0, #96f2ff); Gradient background */
+  background: linear-gradient(to right, #fff, #ccc);
+  color: transparent; /* Make text transparent */
+  -webkit-background-clip: text; /* Apply background to text */
+  background-clip: text; /* Apply background to text */
+}
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  margin-right: 20px;
+  font-size: 20px;
+}
+/* Apply hover effect to navigation bar items */
+nav ul li:hover {
+  background-color: rgba(128, 128, 128, 0.5); /* Change background color on hover */
+  color: black;
+}
+nav ul li a:hover {
+  color: black;
+  text-decoration: none;
+  margin-right: 20px;
+}
+/* .list-item:hover{
+  color: black;
+}  */
+/* Style the dropdown menu items */
+.dropdown:hover .dropdown-content {
+  display: block; /* Show dropdown content on hover */
+}
+
+/* Apply hover effect to dropdown menu items */
+.dropdown-content a:hover {
+  background-color: rgba(128, 128, 128, 0.932); /* Change background color on hover */
+}
+section {
+  padding: 50px 0;
+}
+
+section h2 {
+  text-align: center;
+}
+.container h2{
+  color: white;
+}
+.overview p{
+  position: relative;
+}
+.overview p::after {
+  position: absolute;
+  content: "";
+  height: 100%;
+  width: 100%;
+  text-align: center;
+  left: 0;
+  /* border-left: 2px solid white ; */
+}
+.typing-animation {
+  overflow: hidden; /* Hide overflow */
+  white-space: nowrap; /* Prevent wrapping */
+  border-right: 2px solid #000;
+  animation: typing 5s steps(20) 1; /* Set animation */
+  max-height: 800px;
+  }
+
+
+@keyframes typing {
+  from {
+      width: 0;
+      border-right-color: transparent; 
+    }
+    to {
+      width: 100%;
+      border-right-color: #000;
+    }
+}
+  /* Carousel container */
+.carousel {
+  position: relative;
+  max-width: 600px; /* Adjust as needed */
+  margin: 0 auto;
+}
+
+/* Hide all slides by default */
+.slide {
+  display: none;
+}
+
+/* Style the images within the carousel */
+.slide img {
+  width: 100%;
+  height: auto;
+}
+
+/* Style the strategy text */
+.slide p {
+  text-align: center;
+  padding: 10px;
+  background-color: #f0f0f0;
+  margin-top: 10px;
+}
+
+/* Add a border to the strategy text */
+.slide p {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+/* Add some margin between slides */
+.slide {
+  margin-bottom: 20px;
+}
+.caption {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent black background */
+  color: white;
+  padding: 10px;
+  text-align: center;
+}
+#soldiers{
+  text-align: center;
+}
+
+/* Dropdown styles */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: #333;
+  padding: 12px 16px;
+  display: block;
+  text-align: center;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.chat-box {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 300px;
+ 
+  border: 2px solid #cccccc63;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  display: none; /* Initially hidden */
+  background-image: url("mess.jpg");
+  background-size: cover;
+  background-color: rgba(0, 0, 255, 0.5); /* Blue color with transparency */
+}
+
+.chat-header {
+  background-color: rgba(0, 0, 0, 0.397);
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  color: #ccc;
+}
+
+.chat-header h3 {
+  margin: 0;
+  text-align: center;
+}
+#closeChat{
+  margin-left: 80%;
+  color: #ccc;
+  background-color: #3333339c;
+}
+.chat-content {
+  height: 200px;
+  overflow-y: auto;
+  padding: 10px;
+}
+.chat-content .profile-img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  margin-right: 5px;
+}
+.chat-input {
+  display: flex;
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 0.397);
+  
+}
+
+.chat-input input {
+  flex: 1;
+  padding: 5px;
+  border: 1px solid black;
+  border-radius: 3px;
+  background-color: rgba(0, 0, 0, 0.712);
+  color: #ccc;
+}
+
+.chat-input button {
+  padding: 5px 10px;
+  margin-left: 10px;
+  background-color: #3333339c;
+  color: #ccc;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+.chat-content{
+  color: wheat;
+}
+.chat-content {
+  margin-bottom: 10px;
+}
+
+/* Chat message styles */
+.chat-message.sent {
+  text-align: right; /* Align sent messages to the right */
+}
+
+.chat-message.received {
+  text-align: left; /* Align received messages to the left */
+}
+
+.chat-message .sender {
+  font-weight: bold;
+}
+
+.chat-message .message-text {
+  margin-left: 10px;
+}
+#openChat {
+  position: fixed;
+  top: 150px;
+  right: 20px;
+  padding: 10px;
+  background-color: #007bff;
+  border-radius: 50%; /* Rounded shape */
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+#openChat:hover {
+  background-color: #0056b3;
+}
+
+#openChat::before {
+  content: '';
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  background-image: url('icon5.png'); /* Replace with your chat icon */
+  background-size: cover;
+}
+
+#openChat span {
+  color: #fff;
+  margin-left: 10px;
+  font-size: 16px;
+}
+
+
+
+/* Styles for soldier cards */
+#soldiers {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+}
+
+.soldier-card {
+  width: 30%;
+  background-color: #f9f9f9;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 20px;
+  margin: 10px;
+  
+  font-size: 20px;
+}
+#s1{
+  color: #adb5bd;
+  background: rgba(0, 0, 0, 0.7)url("sold2.jpg");
+  position: relative;
+  background-blend-mode: darken;
+  background-size: cover;
+}
+#s2{
+  color: #adb5bd;
+  background: rgba(0, 0, 0, 0.7)url("sold3.jpg");
+  position: relative;
+  background-blend-mode: darken;
+  background-size: cover;
+}
+#s3{
+  color: #adb5bd;
+  background: rgba(0, 0, 0, 0.4)url("sold6.jpg");
+  position: relative;
+  background-blend-mode: darken;
+  background-size: cover;
+}
+
+.soldier-card h3 {
+  margin-top: 0;
+}
+
+/* Styles for list items */
+.list-item {
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+footer {
+  background-color: #08102bcb;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+}
+
+footer p {
+  margin: 5px 0;
+}
+.button {
+  display: inline-block;
+padding: 15px 30px;
+background-color: #042950; /* Blue color */
+color: #fff; /* White text color */
+text-decoration: none; /* Remove underline */
+border: 2px solid #3e73ac; /* Blue border */
+border-radius: 25px; /* Rounded corners */
+font-size: 18px; /* Font size */
+font-weight: bold; /* Bold font weight */
+text-transform: uppercase; /* Uppercase text */
+transition: background-color 0.3s, color 0.3s, border-color 0.3s; /* Smooth transitions */
+  margin-left: 40%;
+}
+.button:hover {
+  background-color: #0057b3a6; /* Darker blue on hover */
+}
+.button:focus {
+  outline: none; /* Remove default focus outline */
+  box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.5); /* Blue focus border */
+}
